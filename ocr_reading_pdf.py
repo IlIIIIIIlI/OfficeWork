@@ -42,3 +42,11 @@ combined_text_path = os.path.join(output_folder, 'combined.txt')
 with open(combined_text_path, 'w') as f:
     f.write('\n'.join(all_text))
 print(f'所有文本已合并并保存至: {combined_text_path}')
+
+
+
+# Also, save the combined text to a .md file
+combined_md_path = os.path.join(output_folder, 'combined.md')
+with open(combined_md_path, 'w') as md_file:
+    md_file.write('\n'.join(all_text))
+print(f'All text combined and saved to MD file: {combined_md_path}')
